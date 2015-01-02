@@ -40,6 +40,12 @@
 				'separator'   => '<span class="screen-reader-text">, </span>',
 			) );
 		?>
+		<h3>Meta Data</h3>
+		<pre>
+			<?php
+			print_r(the_meta());
+			?>
+		</pre>
 	</div><!-- .entry-content -->
 
 	<?php

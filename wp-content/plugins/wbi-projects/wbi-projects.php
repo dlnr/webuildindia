@@ -37,7 +37,7 @@ if ( ! function_exists('projects') ) {
     );
     $args = array(
     'label'               => __( 'post_type', 'text_domain' ),
-    'description'         => __( 'Projects for webuildinsia', 'text_domain' ),
+    'description'         => __( 'Projects for webuildindia', 'text_domain' ),
     'labels'              => $labels,
     'supports'            => array( 'title', 'editor', 'excerpt', 'thumbnail', 'revisions', 'custom-fields', 'page-attributes', ),
     'taxonomies'          => array( 'category', 'post_tag' ),
@@ -47,16 +47,16 @@ if ( ! function_exists('projects') ) {
     'show_in_menu'        => true,
     'show_in_nav_menus'   => true,
     'show_in_admin_bar'   => true,
-    'menu_position'       => 5,
+    'menu_position'       => 20,
     'menu_icon'           => 'dashicons-location-alt',
     'can_export'          => true,
     'has_archive'         => true,
     'exclude_from_search' => false,
     'publicly_queryable'  => true,
     'rewrite'             => $rewrite,
-    'capability_type'     => 'page',
+    'capability_type'     => 'post',
     );
-    register_post_type( 'post_type', $args );
+    register_post_type( 'project', $args );
 
   }
 

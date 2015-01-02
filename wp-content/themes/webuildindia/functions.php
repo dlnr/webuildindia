@@ -21,6 +21,13 @@
  * {@link https://codex.wordpress.org/Plugin_API}
  */
 
+function custom_conference_in_home_loop( $query ) {
+	if ( is_home() && $query->is_main_query() )
+	$query->set( 'post_type', array( 'post', 'project') );
+	return $query;
+}
+add_filter( 'pre_get_posts', 'custom_conference_in_home_loop' );
+
 /**
  * Set the content width based on the theme's design and stylesheet.
  *
