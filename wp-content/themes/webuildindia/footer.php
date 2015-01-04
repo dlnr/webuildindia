@@ -11,7 +11,7 @@
 
 	<footer id="colophon" class="site-footer" role="contentinfo">
 		<div class="site-info">
-			<span>An initiative by Gerrie Danenberg and built with the help of <a href="http://dlnr.org">dlnr.org</a></span>
+			<span>Copyright webuildindia.in</span>
 		</div><!-- .site-info -->
 	</footer><!-- .site-footer -->
 
